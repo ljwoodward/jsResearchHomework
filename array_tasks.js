@@ -61,7 +61,17 @@ var arrayTasks = {
 	},
 
 	sumOfAllEvenNumbersSquared: function (arr) {
-
+		const newArray = [];
+		for (num of arr) {
+			if (num % 2 === 0) {
+				newArray.push(num);
+			}
+		}
+		let total = 0;
+		for (num of this.square(newArray)) {
+			total += num;
+		}
+		return total;
 	}
 
 }
