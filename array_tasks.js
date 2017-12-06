@@ -22,7 +22,11 @@ var arrayTasks = {
 	},
 
 	sum: function (arr) {
-
+		let total = 0;
+		for(let num of arr) {
+			total += num;
+		}
+		return total;
 	},
 
 	findDuplicates: function (arr) {
