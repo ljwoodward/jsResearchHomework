@@ -29,12 +29,25 @@ var arrayTasks = {
 		return total;
 	},
 
-	findDuplicates: function (arr) {
-
-	},
+	// findDuplicates: function (arr) {
+	// 	let newArray = arr.map(function () {
+	// 		for (num of arr) {
+	// 			return {count: 1, number: num};
+	// 		}
+	// 	})
+	// 	newArray.
+	// 	return multiples;
+	// },
+	// I GIVE UP!
 
 	removeAndClone: function (arr, valueToRemove) {
-
+		const result = [];
+			for (num of arr) {
+				if (num !== valueToRemove) {
+					result.push(num);
+				}
+			}
+		return result;
 	},
 
 	findIndexesOf: function (arr, itemToFind) {
