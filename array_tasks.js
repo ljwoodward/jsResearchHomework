@@ -17,7 +17,8 @@ var arrayTasks = {
 	},
 
 	square: function (arr) {
-
+		const map = arr.map(x => x * x);
+		return map;
 	},
 
 	sum: function (arr) {
